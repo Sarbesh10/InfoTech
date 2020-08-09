@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../video and images/ContactUs.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+h1{
+    padding: 20px;
+    padding-left: 200px;
+    color: black;
+}
+h3{
+    font-family: sans-serif;
+    font-size: 32px;
+    padding: 10px;
+    padding-left: 280px;
+    color: black;
+}
+.register{
+    width: 450px;
+    height: 400px;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    font-size: 18px;
+}
+#register{
+    margin-left: 165px;
+}
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+#name{
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+#number{
+    width: 400px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#address{
+    width: 400px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+.facebook{
+	color: black;
+    opacity: 1;
+    padding-right: 20px;
+    align-content: center
+}
+.facebook:hover{
+	opacity: 0.8 ;
+}
+.instagram{
+	color: black;
+    opacity: 1;
+    padding-right: 20px;
+}
+.instagram:hover{
+    opacity: 0.8 ;
+}
+.steam{
+	color: black;
+	opacity: 1;
+}
+.steam:hover{
+	opacity: 0.8 ;
+}
+.container{
+    display: flex;
+}
+.left{
+    flex:50%;
+    padding-top:80px;
+    padding-left:30px;
+}
+.right{
+    flex:50%;
+    padding-top:50px; 
+    margin-left: -145px;
+}

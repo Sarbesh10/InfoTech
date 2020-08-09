@@ -1,0 +1,34 @@
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.facebook{
+	color: black;
+	opacity: 1;
+	padding-right: 20px;
+}
+.facebook:hover{
+	opacity: 0.8 ;
+}
+.instagram{
+	color: black;
+	opacity: 1;
+	padding-right: 20px;
+}
+.instagram:hover{
+    opacity: 0.8 ;
+}
+.steam{
+	color: black;
+	opacity: 1;
+}
+.steam:hover{
+	opacity: 0.8 ;
+}

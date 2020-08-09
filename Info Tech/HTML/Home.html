@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Info-Tech: Home |</title>
+<style>
+  h1{
+    color: white;
+    text-align: center;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow: hidden;
+  background-color: plum;
+  }
+  li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: green;
+  color:black;
+}
+li a.active {
+  background-color: yellow;
+  color: black;
+}
+#date{
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+</style>
+</head>
+  <body> <!--Image Slider-->
+    <style>
+    body{
+      background-image: url('../video and images/Home.jpg');
+      background-size: 1366px 675px;
+    }
+    .slider{
+      width: 700px;
+      height: 300px;
+      margin: 10px auto;
+      animation: slide 20000ms infinite;
+    }
+    @keyframes slide{
+      25%{
+      background-image: url('../video and images/firstchange.jpg'); 
+    }
+      50%{
+      background-image: url('../video and images/secondchange.jpg');
+    }
+      75%{
+      background-image: url('../video and images/thirdchange.jpg'); 
+    }
+      100%{
+      background-image: url('../video and images/fourthchange.jpg'); 
+    }
+    }
+    </style>
+      <img src="../video and images/logo.png" width=683px height="150" style="padding-left: 342px; opacity: 0.8;">
+    <nav>
+        <div>
+        <ul>
+      <li><a class="active" href="Home.html">Home |</a></li>
+      <li><a href="Blog.html">Blog |</a></li>
+      <li><a href="Research.html">Research |</a></li>
+      <li><a href="About Me.html">About Me |</a></li>
+      <li><a href="Contact Us.html">Contact Us |</a></li>
+    </ul>
+    </div>
+    </nav> 
+    <div style="color:white; font-size:20px; text-align:center;">
+      <!--Javascript Prompt Message-->
+    <script>
+    var name=prompt("Enter Your Name: ")
+    document.write("Welcome " + name);
+    </script>
+    </div>
+    <p id="date">
+        <script type="text/javascript"> 
+          function display_c(){
+          var refresh=1000;
+          mytime=setTimeout('display_ct()',refresh)
+          }
+          
+          function display_ct() {
+          var x = new Date()
+          document.getElementById('ct').innerHTML = x;
+          display_c();
+           }
+        </script>
+        </head>
+        <body onload=display_ct();>
+        <span id='ct' ></span></p>
+  <h1 id="hi">Welcome to Info-Tech.</h1>
+  <!-- Javascript for font color change-->
+    <script>
+    func1()
+function func1(){
+	document.getElementById("hi").style.color = "white";
+	setTimeout(func2, 1000);
+}
+function func2(){
+	document.getElementById("hi").style.color="red";
+	setTimeout(func1, 1000);
+}
+    </script>
+  <div  class="slider">
+  </div>
+</body>
+</html>

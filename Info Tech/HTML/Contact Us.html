@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info-Tech: Contact Us |</title>
+    <!--Linking CSS-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styleContact.css">
+</head>
+<style>
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: tomato;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    li a:hover {
+      background-color: green;
+      color:black;
+    }
+    li a.active {
+      background-color: yellow;
+      color: black;
+    }
+    #date{
+      text-align: center;
+      padding: 20px;
+    }
+    label{
+      color: black;
+      font-style: initial;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .icons{
+        float:left;
+        margin-left: 310px;
+    }
+    </style>
+        <nav>
+            <div class="row clearfix">
+              <img src="../video and images/logo.png" width=683px height="150" style="padding-left: 350px; padding-top: 8px; opacity: 0.8;">
+                  <ul>
+                  <li><a href="Home.html">Home |</a></li>
+                  <li><a href="Blog.html">Blog |</a></li>
+                  <li><a href="Research.html">Research |</a></li>
+                  <li><a href="About Me.html">About Me |</a></li>
+                  <li><a class="active" href="Contact Us.html">Contact Us |</a></li>
+                </ul>
+        </nav> 
+        <!--Javascript for current date and time-->
+        <p id="date"><font color="white">
+            <script> 
+              var d=new Date();
+              document.getElementById("date").innerHTML = d;
+            </script>
+            </p>
+            <!--Javascript for change of font size-->
+            <body onload=display_ct();>
+             
+            <h2 id="US" style="text-align:center;"> Feel free to contact us any time any day !</h2>
+            <script src="../Javascript/ContactUS.js">
+            </script>
+    <!--Creating Class Container-->
+            <div class="container">
+      <div class="left">
+        <div class="image">
+          <div class="back">
+          <img src="../video and images/contact_image.jpg" width="600px" height="420px">
+        </div>
+      </div>
+    </div>
+      <div class="right">
+        <!--Creating form-->
+          <div class="forms">
+          <h1>Fill the form to contact us</h1>
+            <h3>Contact Form</h3>
+            <div class="register">
+            <form name="messageForm" onsubmit="validateForm()" method="post" id="register">
+            <label> Full Name : </label> <br>
+            <p><input type="text" style="border-radius: 20px;" name="Fname" id="name" placeholder="Input Full Name"> <br></p>
+            <label> Address : </label> <br>
+            <p><input type="text" style="border-radius: 20px;" name="Address" id="address" placeholder="Input Address"> <br></p>
+            <label> Email ID : </label><br>
+            <p><input type="email" style="border-radius: 20px;" name="Email" id="name" placeholder="Input Email ID"> <br></p>
+            <label> Contact Number : </label> <br>
+            <p><input type="name" style="border-radius: 20px;" name="CNum" id="number" placeholder="Input Contact Number"> <br></p>
+            <input type="submit" value="Enter" style="background-color: chartreuse; height: 40px; width: 70px; margin-left:180px; margin-right:50%; display:block; margin-top:30px; margin-bottom:20px; border-radius: 20px; ">
+            </form>
+            <div class="icons" align="center">			
+              <a href="https://www.facebook.com/sarshlov1" class="facebook"><img src="../video and images/facebook.png" style="height: 5%; width: 30px;"></a>
+              <a href="https://www.instagram.com/sarbesh_amatya/" class="instagram"><img src="../video and images/instagram.jpg" style="height: 5%; width: 30px;"></a>
+              <a href="https://steamcommunity.com/profiles/76561198435129180/" class="steam"><img src="../video and images/Steam.jpg" style="height: 5%; width: 30px;"></a>
+            </div>
+    </div>
+  </div>
+  </div>
+  <!--Javascript for form validation-->
+    <script>
+			function validateForm() {
+				var Fullname = document.forms["messageForm"]["Fname"].value;
+				var YourAddress = document.forms["messageForm"]["Address"].value;
+				var EmailAddress = document.forms["messageForm"]["Email"].value;
+				var CNumber = document.forms["messageForm"]["CNum"].value;
+
+				if (Fullname == "" || YourAddress == "" || EmailAddress == "" || CNumber == ""){
+					alert("You have left an empty field. Please fill the form completely.");
+				}
+				else {
+					alert("Thank you for the feedback.");
+				}
+			}
+		</script>
+    </div>
+    <p><img src="../video and images/map.png" style = "display: block; margin-left: auto; margin-right: auto; margin-top: -60px; "width=500px height="250px"></p>
+    </body>
+</html>
